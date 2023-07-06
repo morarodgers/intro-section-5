@@ -37,8 +37,9 @@ function checkGuess() {
 
     correctMessage.style.display = 'block';
 
-   // submitButton.disabled = true;
-    //guessInput.disabled = true;
+    // Disable submit and input when guess is correct
+    submitButton.disabled = true;
+    guessInput.disabled = true;
   }
 
   if (guess !== targetNumber) {
@@ -99,6 +100,7 @@ function setup() {
 
   // Reset number of attempts
   maxNumberOfAttempts = 5;
+  attempts = 0;
 
   // Enable the input and submit button
   submitButton.disabled = false;
