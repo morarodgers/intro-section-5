@@ -12,4 +12,12 @@ main {
 
 #reset {
   margin: 20px;
+  display: none;
+}
+.message {
+  display: none;
+}
+#min, #max {
+  display: none;
+  color: crimson;
 }
