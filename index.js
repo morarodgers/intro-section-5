@@ -80,7 +80,7 @@ function checkGuess() {
   }
 
   // Prevent submission of number lower than 1
-  if (guess > 100) {
+  if (guess >= 100) {
     setup();
     moreThanMax.style.display = 'block';
   }
